@@ -1,0 +1,2 @@
+eventlet==0.35.2
+python-socketio==5.11.1
