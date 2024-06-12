@@ -7,7 +7,7 @@ sid_to_game_clients = {}
 sid_to_game_ids = {}
 all_game_rooms = {}
 all_game_clients = {}
-DEBUG = True
+DEBUG = False
 
 class GameClient():
     def __init__(self, _username, _socketId, _ready):
