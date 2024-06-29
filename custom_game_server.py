@@ -1,7 +1,8 @@
 import os
 import socketio
+from decouple import config
 
-sio = socketio.Server(cors_allowed_origins='*')
+sio = socketio.Server(cors_allowed_origins=config('ALLOWED_HOSTS'))
 app = socketio.WSGIApp(sio)
 sid_to_game_clients = {}
 sid_to_game_ids = {}
